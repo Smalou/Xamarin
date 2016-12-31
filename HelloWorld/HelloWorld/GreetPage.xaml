@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HelloWorld.GreetPage">
-  <Button HorizontalOptions="Center" VerticalOptions="Center" Text="Click Me" Clicked="Handle_clicked"></Button>
+             x:Class="HelloWorld.GreetPage"
+             Padding="0, 110, 0, 0"
+             Title="treasureSFInd">
+  <StackLayout HorizontalOptions="Center">
+    <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+      <Image Source="tsf.png" />
+    </StackLayout>
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+      <Button Text = "Zaloguj się"
+              Clicked="LoginPageClicked"/>
+      <Button Text = "Zarejestruj się"
+              Clicked="RegistrationClicked"/>
+      <Label Text="Zapomniałem hasła" FontSize="Large" HorizontalOptions="Center" />
+    </StackLayout>
+  </StackLayout>
 </ContentPage>

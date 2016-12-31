@@ -13,11 +13,16 @@ namespace HelloWorld
 
         public GreetPage()
         {
+            BackgroundColor = Color.White;
             InitializeComponent();
         }
-        void Handle_Clicked(object sender, EventArgs e)
+        void LoginPageClicked(object sender, EventArgs args)
         {
-            DisplayAlert("Title","Hello World","ok");
+            Navigation.PushAsync(new LoginPage());
+        }
+        void RegistrationClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Registration());
         }
     }
 }
