@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using AppServiceHelpers;
 
 using Xamarin.Forms;
 
@@ -11,6 +12,7 @@ namespace HelloWorld
     {
         public App()
         {
+   
             InitializeComponent();
             MainPage = new NavigationPage(new GreetPage());
    
@@ -18,7 +20,7 @@ namespace HelloWorld
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+
         }
 
         protected override void OnSleep()
